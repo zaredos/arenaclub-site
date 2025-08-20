@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(15.79 6.25% 9.02%);
+  --foreground: hsl(200 6.67% 91.18%);
+  --card: hsl(228 9.8% 10%);
+  --card-foreground: hsl(0 0% 85.1%);
+  --popover: hsl(15.79 6.25% 9.02%);
+  --popover-foreground: hsl(200 6.67% 91.18%);
+  --primary: hsl(158.1 64.4% 51.6%);
+  --primary-foreground: hsl(15.79 6.25% 9.02%);
+  --secondary: hsl(217.2 32.6% 17.5%);
+  --secondary-foreground: hsl(200 6.67% 91.18%);
+  --muted: hsl(217.2 32.6% 17.5%);
+  --muted-foreground: hsl(215 20.2% 65.1%);
+  --accent: hsl(217.2 32.6% 17.5%);
+  --accent-foreground: hsl(200 6.67% 91.18%);
+  --destructive: hsl(0 62.8% 30.6%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(217.2 32.6% 17.5%);
+  --input: hsl(217.2 32.6% 17.5%);
+  --ring: hsl(158.1 64.4% 51.6%);
+  
+  /* Gaming theme colors */
+  --minecraft-green: hsl(158.1 64.4% 51.6%);
+  --minecraft-blue: hsl(217.2 91.2% 59.8%);
+  --minecraft-orange: hsl(38 92% 50%);
+  --dark-primary: hsl(222.2 84% 4.9%);
+  --dark-secondary: hsl(217.2 32.6% 17.5%);
+  
+  /* Gaming fonts */
+  --font-gaming: 'Orbitron', monospace;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: hsl(15.79 6.25% 9.02%);
+  --foreground: hsl(200 6.67% 91.18%);
+  --card: hsl(228 9.8% 10%);
+  --card-foreground: hsl(0 0% 85.1%);
+  --popover: hsl(15.79 6.25% 9.02%);
+  --popover-foreground: hsl(200 6.67% 91.18%);
+  --primary: hsl(158.1 64.4% 51.6%);
+  --primary-foreground: hsl(15.79 6.25% 9.02%);
+  --secondary: hsl(217.2 32.6% 17.5%);
+  --secondary-foreground: hsl(200 6.67% 91.18%);
+  --muted: hsl(217.2 32.6% 17.5%);
+  --muted-foreground: hsl(215 20.2% 65.1%);
+  --accent: hsl(217.2 32.6% 17.5%);
+  --accent-foreground: hsl(200 6.67% 91.18%);
+  --destructive: hsl(0 62.8% 30.6%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(217.2 32.6% 17.5%);
+  --input: hsl(217.2 32.6% 17.5%);
+  --ring: hsl(158.1 64.4% 51.6%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-dark-primary text-slate-50 font-body antialiased overflow-x-hidden;
+    font-family: var(--font-body);
+  }
+  
+  .font-gaming {
+    font-family: var(--font-gaming);
+  }
+  
+  .font-body {
+    font-family: var(--font-body);
+  }
+  
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+@layer utilities {
+  .minecraft-green {
+    color: var(--minecraft-green);
+  }
+  
+  .bg-minecraft-green {
+    background-color: var(--minecraft-green);
+  }
+  
+  .minecraft-blue {
+    color: var(--minecraft-blue);
+  }
+  
+  .bg-minecraft-blue {
+    background-color: var(--minecraft-blue);
+  }
+  
+  .minecraft-orange {
+    color: var(--minecraft-orange);
+  }
+  
+  .bg-minecraft-orange {
+    background-color: var(--minecraft-orange);
+  }
+  
+  .bg-dark-primary {
+    background-color: var(--dark-primary);
+  }
+  
+  .bg-dark-secondary {
+    background-color: var(--dark-secondary);
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .minecraft-texture {
+    background-image: 
+      linear-gradient(45deg, transparent 25%, rgba(255,255,255,0.1) 25%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 75%, rgba(255,255,255,0.1) 75%),
+      linear-gradient(-45deg, transparent 25%, rgba(255,255,255,0.1) 25%, rgba(255,255,255,0.1) 50%, transparent 50%, transparent 75%, rgba(255,255,255,0.1) 75%);
+    background-size: 20px 20px;
+  }
+}
+
+@keyframes glow {
+  from { 
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.5); 
+  }
+  to { 
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.8); 
+  }
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-10px); 
+  }
+}
