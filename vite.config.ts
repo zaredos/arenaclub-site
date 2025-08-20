@@ -34,8 +34,5 @@ export default defineConfig({
       deny: ["**/.*"],
     },
   },
-<<<<<<< HEAD
   base: "/arenaclub-site"
-=======
->>>>>>> ca4175ffc6e799b1a012ee966d62666158d479e3
 });
