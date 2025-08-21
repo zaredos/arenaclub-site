@@ -67,3 +67,21 @@ Preferred communication style: Simple, everyday language.
 - **TypeScript**: Full-stack type safety with path mapping and module resolution
 - **ESBuild**: Fast JavaScript bundler for production backend builds
 - **PostCSS**: CSS processing with Tailwind and Autoprefixer plugins
+
+## Running Locally
+
+```bash
+npm install
+npx tsx server/index.ts
+```
+
+The server uses the Vite dev server in middleware mode for the React client and Express for the API. Navigate to <http://localhost:3000/> to view the app.
+
+## Deploying to GitHub Pages
+
+1. Commit your changes and push to GitHub.
+2. Run `npm run deploy`. This builds the client and publishes `dist/public` to the `gh-pages` branch using the `gh-pages` package.
+3. Ensure GitHub Pages is configured to serve from the `gh-pages` branch.
+4. Visit <https://zaredos.github.io/arenaclub-site/> after the deployment completes.
+
+Deployments can also be automated using the provided GitHub Actions workflow.

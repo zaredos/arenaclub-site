@@ -41,6 +41,7 @@ export class MemStorage implements IStorage {
       ...insertSuggestion,
       id,
       createdAt: new Date(),
+      email: insertSuggestion.email ?? null,
     };
     this.suggestions.set(id, suggestion);
     return suggestion;
