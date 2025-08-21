@@ -153,7 +153,7 @@ var vite_config_default = defineConfig({
       deny: ["**/.*"]
     }
   },
-  base: "/arenaclub-site"
+  base: "/arenaclub-site/"
 });
 
 // server/vite.ts
