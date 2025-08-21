@@ -34,5 +34,5 @@ export default defineConfig({
       deny: ["**/.*"],
     },
   },
-  base: "/arenaclub-site"
+  base: "/arenaclub-site/"
 });
