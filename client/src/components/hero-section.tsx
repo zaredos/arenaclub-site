@@ -56,9 +56,14 @@ export default function HeroSection() {
             </div>
           </div>
           
-          <h1 className="font-gaming text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-minecraft-green via-minecraft-blue to-minecraft-orange bg-clip-text text-transparent">
-            ArenaClub
-          </h1>
+            <h1 className="font-gaming text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+            <span className="bg-gradient-to-r from-slate-400 via-slate-300 to-slate-100 bg-clip-text text-transparent drop-shadow-lg">
+              Arena
+            </span>
+            <span className="bg-gradient-to-r minecraft-green via-emerald-400 to-minecraft-blue bg-clip-text text-transparent drop-shadow-lg ml-2">
+              Club
+            </span>
+            </h1>
           
           <h2 className="text-xl md:text-2xl lg:text-3xl text-slate-300 mb-8 font-light">
             Ultimate Vanilla Minecraft PvP Server

@@ -22,7 +22,7 @@ export default function JoinSection() {
   };
 
   const requirements = [
-    "Latest version of Minecraft Java Edition",
+    "Minecraft Java Edition 1.21.8+",
     "No mods or plugins required",
     "Stable internet connection",
     "Basic PvP knowledge recommended"
