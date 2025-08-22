@@ -30,7 +30,7 @@ npm run dev
 ```
 
 * Starts the site locally on **[http://localhost:3000](http://localhost:3000)**
-* Uses Vite’s hot reload, so any code or style changes show up in your browser instantly, without a full reload.
+* Uses Vite’s hot reload, so any code or style changes show up in your browser instantly. 
 
 This is the main command to use while developing.
 
@@ -67,7 +67,7 @@ Only collaborators with push access to this repo can deploy changes. Cloning the
 
 ---
 
-## System Architecture (Technical Details)
+## System Architecture
 
 ### Frontend Architecture
 
